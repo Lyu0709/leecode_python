@@ -5,11 +5,11 @@ class Solution:
         buff_dict = {}
         for i in range(len(nums)):
             if nums[i] in buff_dict:
-                return [buff_dict[target - nums[i]], i]
+                return [buff_dict[nums[i]], i]
             else:
                 buff_dict[target - nums[i]] = i
 
     self = 0
-    nums = {1,2,3,4}
+    nums = [1,2,3,4]
     target =6
     print(twoSum(self, nums, target))
